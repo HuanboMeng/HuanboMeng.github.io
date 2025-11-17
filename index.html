@@ -31,6 +31,8 @@
     <!-- ===== PROJECTS ===== -->
     <div style="margin-top: 20px;">
         <b>Projects</b>
+
+        <!-- Project List -->
         <div style="margin-top: 10px;">
             <ul style="list-style-type: '-'; padding-left: 20px;">
                 <li>Linear Programming and Its Application</li>
@@ -39,30 +41,79 @@
                 <li>Engineering Ethical Analysis Portfolios</li>
             </ul>
         </div>
+
+        <!-- Detailed Visualization for Fluid Dynamics Project -->
+        <div style="margin-top: 25px;">
+            <h3>Fluid Dynamics Simulation of Polygonal Objects</h3>
+            <p style="font-size: 15px; line-height: 1.4; max-width: 900px;">
+                Simulation and analysis of polygon-induced turbulence using the Lattice Boltzmann Method (LBM)
+                and Chan–Vese segmentation, with GPU-accelerated implementation on NERSC Perlmutter.
+            </p>
+
+            <!-- ===== FIRST ROW (GIFs) ===== -->
+            <div style="
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                margin-top: 20px;
+            ">
+                <div style="flex: 1; text-align: center;">
+                    <img src="triangle_iteration_20000.gif" 
+                         alt="Triangle LBM Simulation" 
+                         style="width: 100%; max-width: 450px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div style="font-size: 14px; color: gray; margin-top: 5px;">
+                        Triangle Object – LBM Iterations
+                    </div>
+                </div>
+
+                <div style="flex: 1; text-align: center;">
+                    <img src="cal_iteration_20000.gif" 
+                         alt="California Shape LBM Simulation" 
+                         style="width: 100%; max-width: 450px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div style="font-size: 14px; color: gray; margin-top: 5px;">
+                        California Shape – LBM Iterations
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SECOND ROW (PNGs) ===== -->
+            <div style="
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                margin-top: 30px;
+            ">
+                <div style="flex: 1; text-align: center;">
+                    <img src="tri_csv.png" 
+                         alt="Triangle CSV Visualization" 
+                         style="width: 100%; max-width: 450px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div style="font-size: 14px; color: gray; margin-top: 5px;">
+                        Density / Velocity Field – Triangle Object
+                    </div>
+                </div>
+
+                <div style="flex: 1; text-align: center;">
+                    <img src="cal_csv.png" 
+                         alt="California CSV Visualization" 
+                         style="width: 100%; max-width: 450px; border: 1px solid #ccc; border-radius: 5px;">
+                    <div style="font-size: 14px; color: gray; margin-top: 5px;">
+                        Density / Velocity Field – California Shape
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- ===== PUBLICATIONS ===== -->
     <div style="margin-top: 20px;">
         <b>Publications</b>
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px; max-width: 900px;">
             Meng, H., 2023: 
             <i>Convex programming: the minimum covering circle case.</i> 
             In Second International Conference on Statistics, Applied Mathematics, and Computing Science (CSAMCS 2022), 
             SPIE, Vol. 12597, 222–232. doi: 
             <a href="https://doi.org/10.1117/12.2672704" target="_blank">10.1117/12.2672704</a>
         </div>
-
-        <!-- ===== ADDED ANIMATION ===== -->
-        <div style="margin-top: 20px; text-align: center;">
-            <h3 style="margin-bottom: 10px;">Simulation Visualization</h3>
-            <img src="triangle_iteration_20000.gif" 
-                 alt="Simulation Animation" 
-                 style="width: 70%; max-width: 600px; border: 1px solid #ccc; border-radius: 5px;">
-            <div style="font-size: 14px; color: gray; margin-top: 5px;">
-                Visualization of polygonal turbulence simulation (LBM iterations)
-            </div>
-        </div>
     </div>
 </body>
 </html>
-
